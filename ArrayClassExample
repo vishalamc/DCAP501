@@ -1,0 +1,22 @@
+import java.util.*; 
+
+public class arraysClassEx { 
+	public static void main(String[] args) 
+	{ 
+	
+      int[] num1 = new int[] { 10, 12, 5, 6 };
+      int[] num2 = new int[] { 10, 5, 12, 6 };
+      int[] num3 = new int[] { 10, 5, 6, 12 };
+   Arrays.sort(num1); 
+   System.out.println(Arrays.toString(num1)); 
+int key = 1;   
+System.out.println("found at="+Arrays.binarySearch(num3,key));
+
+System.out.println(Arrays.toString(Arrays.copyOf(num1,10)));
+
+System.out.println(Arrays.equals(num1,num2));
+
+
+
+	} 
+} 
