@@ -1,0 +1,43 @@
+class inherit
+{
+	public static void main(String []args)
+	{
+	B b1=new B();
+	b1.sum();
+	b1.add();
+	}
+
+}
+class A
+{
+	public int num1;
+	private int num2;
+	protected int num3;
+	A()
+	{
+	 num1=10;
+	 num2=20;
+	 num3=30;
+	}
+	void add()
+	{
+	 int res=num1+num2+num3;
+	 System.out.println(res);
+	}
+	
+}
+class B extends A
+{
+	public int num1B;
+	
+	B()
+	{
+	 num1B=10;
+	}
+	void sum()
+	{
+	int resB=num1+num3+num1B;
+	System.out.println(resB);
+	}	
+
+}
