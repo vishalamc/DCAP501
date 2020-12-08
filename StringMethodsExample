@@ -1,0 +1,29 @@
+class stringClassMethods
+{
+	public static void main(String []args)
+	{
+	
+	String str1="HELLO";
+	String str2="television";
+
+	int a=str1.length();//method1
+	System.out.println("The length of the string1 is:"+a);
+	System.out.println(str1.charAt(2));//method2
+	System.out.println(str2.substring(2,5));//method3
+	String str3=str1.concat(str2);//method4
+	System.out.println(str3);
+	String str4=" kumar vishal ";
+	System.out.println(str4.trim());//method5
+        System.out.println(str2.indexOf('e'));//method6
+	
+	System.out.println(str1.equals(str2));//method7
+   System.out.println(str1.equalsIgnoreCase(str2));//method8	
+	System.out.println(str1.compareTo(str2));//method9
+	System.out.println(str1.replace("h","a"));//method10
+String s1="My name is Kumar. My name is kumar. My name";
+System.out.println(s1.replaceAll("\\s",""));//method11
+
+System.out.println(str1.toLowerCase());//method 12
+System.out.println(str2.toUpperCase());//methods13
+	}
+}
