@@ -1,0 +1,31 @@
+interface i1
+{
+public void print1();
+}
+interface i2
+{
+public void print2();
+}
+class classA implements i1,i2
+{
+public void print1()
+{
+System.out.println("i am using interface");
+}
+public void print2()
+{
+System.out.println("i am using interface");
+}
+}
+
+public class interfaceEx1
+{
+
+public static void main(String []args)
+{
+classA A=new classA();
+A.print1();
+A.print2();
+
+}
+}
